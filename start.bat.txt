@@ -1,0 +1,17 @@
+@echo off
+echo Starting FERPA AI Gateway...
+
+:: Check if venv exists, if not, alert user
+if not exist venv\Scripts\activate (
+    echo [ERROR] Virtual environment not found. Please run the setup commands first.
+    pause
+    exit
+)
+
+:: Activate the stable Python 3.12 environment
+call venv\Scripts\activate
+
+:: Start the Flask application
+python app.py
+
+pause
