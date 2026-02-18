@@ -45,7 +45,10 @@ Audit Logging: Every interaction is captured in a local audit log for governance
 
 PII Redaction: The system automatically identifies and replaces sensitive entities with placeholders before the AI processes the notes.
 
+* **Local Governance Interface:** This view demonstrates the SENTRIFIX secure gateway where users input sensitive text. The interface highlights identified PII (like 7-digit student IDs) in real-time using local Microsoft Presidio logic, ensuring that no raw data ever leaves the local environment for processing.*
 ![Dashboard Redaction View](assets/dash1.png)
+
+* **Privacy-Preserving Summarization:** This image shows the "Zero-Leak" workflow in action. Before reaching the local Ollama LLM, all sensitive identifiers are masked with generic tokens. The resulting summary provides academic insights without the AI ever having access to the student’s actual identity.*
 ![Local Inference Logs](assets/dash2.png)
 
 
