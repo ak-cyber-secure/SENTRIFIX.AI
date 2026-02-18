@@ -45,6 +45,8 @@ Audit Logging: Every interaction is captured in a local audit log for governance
 
 PII Redaction: The system automatically identifies and replaces sensitive entities with placeholders before the AI processes the notes.
 
+![Dashboard Redaction View](assets/dash1.png)
+![Local Inference Logs](assets/dash2.png)
 
 
 
